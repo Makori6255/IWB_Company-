@@ -3,35 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="IWB - Leading electronic recycling company in Lesotho">
+    <meta name="description" content="IWB - Recycling electronic components and offering data recovery solutions">
     <title>IWB - Home</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('a.avif'); /* Replace with your image path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #ecf0f1;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: rgba(44, 62, 80, 0.8);
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2em;
+            font-weight: bold;
+            color: #3498db;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 1.5rem;
+        }
+
+        nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 5rem 2rem; /* Decreased padding */
+            background: rgba(52, 73, 94, 0.7);
+            margin: 2rem auto;
+            max-width: 400px; /* Decreased max-width */
+            border-radius: 12px;
+            animation: breathe 5s infinite ease-in-out; /* Added breathing animation */
+        }
+
+        .hero-content h1 {
+            font-size: 2.5em; /* Decreased font size */
+            margin-bottom: 1rem;
+            color: #3498db;
+        }
+
+        .hero-content .tools-link {
+            font-size: 1.2em; /* Decreased font size */
+            margin-bottom: 1.5rem; /* Decreased margin */
+        }
+
+        .tools-link a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .tools-link a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: rgba(44, 62, 80, 0.8);
+            color: #ecf0f1;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @keyframes breathe {
+            0% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.05); opacity: 1; }
+            100% { transform: scale(1); opacity: 0.8; }
+        }
+    </style>
 </head>
 <body>
+
     <header>
+        <div class="logo">IWB</div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="tools.html">Tools</a></li>
-                <li><a href="stakeholders.html">Stakeholders</a></li>
+                <li><a href="software.html">Software</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="stakeholders.html">Stakeholders</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="banner">
-            <h1>Discover Our New Software Tools!</h1>
-            <p>Revolutionizing data recovery and destruction.</p>
-            <a href="tools.html" class="btn">Learn More</a>
-        </section>
-
-        <!-- Additional content can go here -->
-    </main>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Empowering Digital Lifecycles</h1>
+            <p class="tools-link"><a href="tools.html">Discover Our Latest Tools</a></p>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2024 IWB. All rights reserved.</p>
+        <p>© 2025 IWB. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
