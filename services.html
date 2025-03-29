@@ -51,8 +51,8 @@
             background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for services section */
             padding: 2rem;
             border-radius: 8px;
-            width: 80%; /* Adjust width as needed */
-            max-width: 600px;
+            width: 90%; /* Adjust width as needed */
+            max-width: 900px;
         }
 
         .services h2 {
@@ -60,13 +60,24 @@
             margin-bottom: 1.5rem;
         }
 
-        .services ul {
-            list-style: none;
-            padding: 0;
+        .services table {
+            width: 100%;
+            border-collapse: collapse;
         }
 
-        .services li {
-            margin-bottom: 1rem;
+        .services th, .services td {
+            border: 1px solid white;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .services th {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .services img {
+            max-width: 100px;
+            height: auto;
         }
 
         footer {
@@ -95,12 +106,42 @@
     <main>
         <section class="services">
             <h2>Our Services</h2>
-            <ul>
-                <li><strong>RAM Recycling:</strong> Secure and environmentally friendly processing of memory modules</li>
-                <li><strong>Hard Drive Destruction:</strong> Complete data sanitization and material recovery</li>
-                <li><strong>Motherboard Component Recycling:</strong> Specialized processing of complex electronics</li>
-                <li><strong>E-Waste Collection:</strong> Convenient pickup services for businesses</li>
-            </ul>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Type of Service</th>
+                        <th>Description</th>
+                        <th>Photo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Smartphone Refurbishment</strong></td>
+                        <td>Comprehensive repair and restoration of used smartphones, including screen replacements, battery upgrades, and software optimization.</td>
+                        <td><img src="sm.webp" alt="Smartphone Refurbishment"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Laptop Component Recovery</strong></td>
+                        <td>Detailed dismantling of laptops to recover valuable components like CPUs, memory, and storage drives, ensuring data security and reuse.</td>
+                        <td><img src="aa.jpg" alt="Laptop Component Recovery"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Circuit Board Recycling</strong></td>
+                        <td>Advanced processing of circuit boards to extract precious metals and rare earth elements, minimizing environmental impact.</td>
+                        <td><img src="ir.jpg" alt="Circuit Board Recycling"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Industrial Electronics Disposal</strong></td>
+                        <td>Safe and compliant disposal of large-scale industrial electronics, including machinery control systems and networking equipment.</td>
+                        <td><img src="v.jpg" alt="Industrial Electronics Disposal"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Data Center Decommissioning</strong></td>
+                        <td>Complete decommissioning services for data centers, including server dismantling, data erasure, and responsible disposal of all electronic assets.</td>
+                        <td><img src="dc.jpg" alt="Data Center Decommissioning"></td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     </main>
 
